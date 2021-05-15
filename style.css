@@ -6,3 +6,18 @@
   margin-right: auto;
   display: block;
 }
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 span.major {
+  font-size: 72px;
+}
+
+h1 span.minor {
+  font-size: 30px;
+}
