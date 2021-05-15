@@ -21,3 +21,23 @@ h1 span.major {
 h1 span.minor {
   font-size: 30px;
 }
+
+.section-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-left {
+  flex: 50%;
+}
+
+.flex-right {
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-left,
+  .flex-right {
+    flex: 100%;
+  }
+}
