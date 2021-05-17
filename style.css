@@ -1,10 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 #image {
   height: auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+#img-caption {
+  text-align: center;
+  margin-top: 6px;
 }
 
 .title-container {
@@ -23,21 +32,20 @@ h1 span.minor {
 }
 
 .section-container {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.flex-left {
-  flex: 50%;
-}
-
-.flex-right {
-  flex: 50%;
+h2 {
+  margin-top: 0;
 }
 
 @media (max-width: 800px) {
-  .flex-left,
-  .flex-right {
-    flex: 100%;
+  .section-container {
+    grid-template-columns: 1fr;
+  }
+  #image {
+    max-width: 500px;
   }
 }
